@@ -1,8 +1,8 @@
 .menuSelection{
     max-width: 1200px;
     padding: 2rem;
-    margin: 0 auto;
-    margin-bottom: 40px;
+    margin: 40px auto;
+  
 }
 
 .menuSelection__contents{
@@ -17,18 +17,18 @@
     font-size: 4rem;
 }
 .h1__main{
-    color:#345;
+    color:var(--text);
     cursor:context-menu;
     font-size: 5rem !important;
 }
 .menuSelection__item{
-    color: rgba(51, 68, 85, 0.212);
+    color: var(--gray-text);
     cursor: pointer;
     transition: .3s ease-in-out;
 }
 
 .menuSelection__item:hover{
-    color:rgba(51, 68, 85, 0.432) ;
+    color:var(--gray-text) ;
     transition: .3s ease;
 }
 .menuSelection__link{
@@ -45,7 +45,7 @@
         margin: 0 5px;
     }
     .h1__main{
-        color:#345;
+        color:var(--text);
         cursor:context-menu;
         font-size: 3rem !important;
     }

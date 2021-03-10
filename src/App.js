@@ -4,7 +4,6 @@ import { keepTheme } from './Components/ChangeColor/SetTheme'
 import Toggle from './Components/ChangeColor/ToggleColor'
 import './Components/ChangeColor/SetColorTheme.css'
 import Header from './Components/Header'
-import MenuSelection from './Components/MenuSeclection';
 import {
   BrowserRouter as Router,
   Switch,
@@ -26,7 +25,6 @@ function App() {
     <Router>
       <Toggle />
       <Header />
-      <MenuSelection />
       <Switch>
         <Route exact path='/'>
           <About />

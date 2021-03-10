@@ -1,5 +1,6 @@
 import React from 'react'
 import './Header.css'
+import MenuSelection from './MenuSeclection'
 
 const Header = () => {
     return (
@@ -10,6 +11,9 @@ const Header = () => {
                 </div>
                 <h1>Trịnh Duy Vinh</h1>
                 <p>  Fresher/intern Front-End</p>
+            </div>
+            <div className="header__nav">
+                <MenuSelection />
             </div>
         </div>
     )

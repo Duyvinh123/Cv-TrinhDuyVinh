@@ -1,17 +1,13 @@
 .theme-dark{
-    --dark-text: #292929;
-    --light-text: #F9F8F8;  
-    --dark-background: #2F4550;
-    --light-background: #586F7C;
-    --accent: #B8DBD9;
-    --button-border: #B8DBD9;
+    --text: rgba(255, 255, 255, 0.952);
+    --gray-text: rgba(255, 255, 255, 0.459);  
+    --dark-background: #79CE98;
+
   }
   .theme-light{
-    --dark-text: #5E4B56;
-    --light-text: #5E4B56;
-    --dark-background: #DBE7E4;
-    --light-background: #EDDCD2;
-    --accent: #DBE7E4;
-    --button-border: #5E4B56;
+    --text: #345;
+    --gray-text: rgba(51, 68, 85, 0.212);  
+    --dark-background: #fff;
+
   }
   

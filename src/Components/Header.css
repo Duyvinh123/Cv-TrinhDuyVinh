@@ -1,7 +1,8 @@
 .header{
     width: 100%;
-    padding: 2rem;
-    margin: 0 auto;
+    padding-top: 2rem;
+    margin: auto;
+    background-color: var(--dark-background);
 }
 .header__content{
     display: flex;
@@ -26,7 +27,7 @@
     font-size: 2.4rem;
     font-weight: 500;
     line-height: 1.2;
-    color: #345;
+    color: var(--text); 
 }
 .header__content > p{
     color: #345;
