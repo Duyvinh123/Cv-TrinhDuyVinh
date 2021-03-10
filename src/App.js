@@ -1,24 +1,45 @@
-import logo from './logo.svg';
+import { useEffect } from 'react'
 import './App.css';
+import { keepTheme } from './Components/ChangeColor/SetTheme'
+import Toggle from './Components/ChangeColor/ToggleColor'
+import './Components/ChangeColor/SetColorTheme.css'
+import Header from './Components/Header'
+import MenuSelection from './Components/MenuSeclection';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import About from './Components/Contents/About';
+import Contact from './Components/Contents/Contact';
+import Project from './Components/Contents/Project';
+import {data} from './Components/Contents/data'
 
 function App() {
+
+  useEffect(() => {
+    keepTheme();
+  })
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Toggle />
+      <Header />
+      <MenuSelection />
+      <Switch>
+        <Route exact path='/'>
+          <About />
+        </Route>
+        <Route path='/contact'>
+          <Contact />
+        </Route>
+        <Route path='/project'>
+          <Project data={data} />
+        </Route>
+      </Switch>
+    </Router>
+
   );
 }
 
