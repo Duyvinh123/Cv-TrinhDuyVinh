@@ -28,7 +28,7 @@
 }
 
 .menuSelection__item:hover{
-    color:var(--gray-text) ;
+    color:var(--gray-text-hover) ;
     transition: .3s ease;
 }
 .menuSelection__link{

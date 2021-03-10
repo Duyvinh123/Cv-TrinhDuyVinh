@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import './App.css';
-import { keepTheme } from './Components/ChangeColor/SetTheme'
+import { keepTheme, setTheme } from './Components/ChangeColor/SetTheme'
 import Toggle from './Components/ChangeColor/ToggleColor'
 import './Components/ChangeColor/SetColorTheme.css'
 import Header from './Components/Header'
@@ -18,9 +18,7 @@ function App() {
 
   useEffect(() => {
     keepTheme();
-  })
-
-
+  },[])
   return (
     <Router>
       <Toggle />

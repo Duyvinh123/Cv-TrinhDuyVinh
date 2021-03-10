@@ -1,12 +1,14 @@
 .theme-dark{
     --text: rgba(255, 255, 255, 0.952);
-    --gray-text: rgba(255, 255, 255, 0.459);  
+    --gray-text: rgba(255, 255, 255, 0.459); 
+    --gray-text-hover: rgba(255, 255, 255, 0.753); 
     --dark-background: #79CE98;
 
   }
   .theme-light{
     --text: #345;
-    --gray-text: rgba(51, 68, 85, 0.212);  
+    --gray-text: rgba(51, 68, 85, 0.212);
+    --gray-text-hover: rgba(51, 68, 85, 0.418);
     --dark-background: #fff;
 
   }

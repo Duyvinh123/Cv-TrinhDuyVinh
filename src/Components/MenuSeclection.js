@@ -34,7 +34,7 @@ const MenuSelection = () => {
 
     const handleOnClickSubtract = () => {
 
-        if (selection === 1) {
+        if (selection <= 1) {
             setSelection(3)
         }
         else {
@@ -44,7 +44,11 @@ const MenuSelection = () => {
 
 
     useEffect(() => {
-        setSelection(JSON.parse(localStorage.getItem('select')))
+        if (localStorage.getItem('select') === null) {
+            setSelection(1)
+        }else{
+            setSelection(JSON.parse(localStorage.getItem('select')))
+        }
     }, [])
 
     useEffect(() => {
